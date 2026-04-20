@@ -1,0 +1,92 @@
+/* Author: Neilia Dillon
+        Date: 4/18/2026
+        Final project-->
+/*custom properties for theme colors */
+
+/* NAVBAR CONTAINER */
+.navbar {
+    background-color: #99ccff;
+    border-radius: 8px;
+    width:100%;
+    display:block;
+    justify-content:space-between;   
+}
+
+/* MAIN MENU */
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 95px;
+}
+
+/* TOP-LEVEL ITEMS */
+.menu > li {
+    position: relative;
+}
+
+/* LINKS */
+.menu a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* HOVER + CURRENT PAGE */
+.menu a:hover,
+.menu .current {
+    background-color: #66b3ff;
+    border-radius: 5px;
+}
+
+/* DROPDOWN MENU */
+.menu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #cce6ff;
+    min-width: 180px;
+    list-style: none;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* DROPDOWN ITEMS */
+.menu ul li a {
+    color: #333;
+    padding: 10px;
+}
+
+/* DROPDOWN HOVER */
+.menu ul li a:hover {
+    background-color: #99ccff;
+    color: white;
+}
+
+/* SHOW DROPDOWN ON HOVER */
+.menu li:hover > ul {
+    display: block;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul {
+        position: static;
+        width: 100%;
+    }
+
+    .menu > li {
+        width: 100%;
+        text-align: center;
+    }
+}

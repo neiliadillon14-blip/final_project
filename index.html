@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Author: Neilia Dillon
+          Date: 4/19/2026
+          Final project homework -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daily Dose Café</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/pages.css">
+
+</head>
+<body> 
+
+<div id="page">
+
+<header> 
+    <a href="../../index.html"> 
+        <img src="../images/coffee.jpg" alt="Daily Dose Café Logo">  
+        <div class="header-text"> 
+            <h2>Daily Dose Café</h2>
+            <h3>Your daily dose of coffee & matcha!</h3> 
+        </div> 
+    </a> 
+</header>
+
+<nav class="navbar"> 
+        <ul class="menu">
+            <li><a href="../home/index.html"class="current">Home</a></li>
+            
+            <li>
+            <a href="../menu/index.html" class="current">Menu</a>
+
+            <ul>
+        <li><a href="../drinks/index.html">Drinks</a></li>
+        <li><a href="../pastries/index.html">Pastries</a></li>
+        </ul>
+    </li>
+    
+        <li>
+    <a href="../about/index.html" class="current">About</a>
+
+    <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="ingredients.html">Our Ingredients</a></li>
+        <li><a href="experience.html">Cafe Experience</a></li>
+        </ul>
+    </li>
+    
+    <li>
+        <a href="order.html">Order</a>
+    <ul>
+        <li><a href="drinks.html">Drinks</a></li>
+        <li><a href="pastries.html">Pastries</a></li>
+        <li><a href="specials.html">Specials</a></li>
+    </ul>
+</li>
+                       
+<li>
+    <a href="contact.html">Contact</a>
+    <ul>
+        <li><a href="contact.html">Contact Form</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="hours.html">Hours</a></li>
+    </ul>
+    
+</li>
+
+    </ul>
+</nav>
+
+<main>
+
+    <div class="about-layout">
+
+           <aside class="mission-box">
+        
+        <h3>Order Your Favorites</h3> 
+
+        <p> Choose your favorite drinks and pastries and customize your order just the way you like it. </p> 
+         <h4>Popular Orders</h4> 
+         <ul> 
+            <li>Iced Matcha Latte</li> 
+            <li>Strawberry Matcha</li> 
+            <li>Latte + Croissant Combo</li> 
+        </ul> 
+    </aside> 
+         <div class="about-content">
+             <h1>Place Your Order</h1>
+              <form action="confirmation.html" method="get">
+                <label>Name:</label><br> 
+                <input type="text" name="name" required><br><br> 
+                
+                <label>Email:</label><br> 
+                <input type="email" name="email" required><br><br> 
+                
+                <label>Phone:</label><br> 
+                 <input type="tel" name="phone"><br><br> 
+                 
+                 <label>Choose Category:</label><br>
+                 <select>
+                    <option>Drink</option> 
+                    <option>Pastry</option> 
+                </select><br><br> 
+                
+                <label>Select Items:</label><br> 
+
+            <div class="checkbox-group">
+                <label><input type="checkbox"> Latte</label>
+                <label><input type="checkbox"> Cold Brew</label>
+                <label><input type="checkbox"> Espresso</label>
+                <label><input type="checkbox"> Iced Matcha Latte</label>
+                <label><input type="checkbox"> Croissant</label>
+                <label><input type="checkbox"> Bagel</label>
+                </div><br>
+                 
+                <label>Size:</label><br>
+                  <select> 
+                    <option>Small</option> 
+                    <option>Medium</option> 
+                    <option>Large</option> 
+                </select><br><br> 
+                     <label>Milk Type:</label><br> 
+                     <select> 
+                        <option>Whole</option> 
+                        <option>Almond</option> 
+                        <option>Oat</option> 
+                    </select><br><br> 
+                     
+                    <label>Special Instructions:</label><br> 
+                     <textarea rows="4" cols="40" placeholder="Extra sugar, no ice, etc."></textarea><br><br> 
+                    
+                     <label>Pickup or Delivery:</label><br> 
+                     <input type="radio" name="type"> Pickup<br>
+                     <input type="radio" name="type"> Delivery<br><br> 
+                     
+                     <input type="submit" value="Place Order"> 
+                    </form> 
+                </div> 
+            </div> 
+                    
+        </main>
+
+<footer class="bottom-box">
+    <p>&copy; Neilia Dillon 2026 </p>
+</footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* 
+Author: Neilia Dillon
+Date: 4/18/2026
+Final project
+Props page styling
+*/
+/* MAIN PAGE LAYOUT */
+.home-page {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* WELCOME SECTION */
+.welcome {
+    grid-column: span 2;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.big-letter {
+    font-size: 4rem;
+    font-weight: 900;
+    float: left;
+    margin-right: 8px;
+    line-height: 1;
+    color: black;
+}
+
+.welcome h2 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* MISSION STATEMENT (ASIDE) */
+.mission-statement {
+    background-color: #99ccff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.mission-statement h3 {
+    color: black;
+    margin-bottom: 8px;
+}
+
+/* PRODUCT OF THE WEEK */
+.product-week {
+    grid-column: span 2;
+    text-align: center;
+    background-color: #f5fbff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.product-week h3 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.product-week img {
+    margin: 10px 0;
+    border-radius: 12px;
+    width: 180px;
+    max-width: 100%;
+}
+
+/* LINKS */
+.product-week a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.product-week a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+}
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    .home-page {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome,
+    .product-week {
+        grid-column: span 1;
+    }
+
+    .mission-statement {
+        order: 2;
+    }
+}

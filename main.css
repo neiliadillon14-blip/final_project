@@ -1,0 +1,268 @@
+/* Author: Neilia Dillon
+        Date: 4/18/2026
+        CSS for my final project -->
+/*custom properties for theme colors */
+
+body {
+    font-family: 'Segoe UI', sans-serif,Verdana, Arial, Helvetica;
+    background-color: #99ccff; 
+    color: #333;
+    line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 1em;
+
+}
+
+/* PAGE CONTAINER */
+#page {
+    max-width: 900px;
+    margin: 20px auto;
+    border: 3px solid black;
+    background-color: #ffffff; /* keep content white */
+    padding: 20px;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    background: linear-gradient(
+        to right,
+        #99ccff,   /* light blue */
+        #66b3ff,   /* medium blue */
+        #cce6ff    /* soft pastel blue */
+    );
+    padding: 20px 80px;
+    border-radius: 10px;
+}
+
+header a {
+    text-decoration: none;  /* removes underline */
+    color: inherit;         /* keeps your text color */
+}
+  
+header img {
+   position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+     width: 160px;              
+    height: auto;
+}
+
+.header-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px; 
+}
+
+/* HEADER TEXT */
+.header-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: #000000;         /* BLACK */
+    letter-spacing: 1px;
+}
+
+.header-text h3 {
+   font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    color: #333;   
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: black; 
+}
+
+/* NAV LINKS */
+.menu a {
+    color: white;
+}
+
+/* HOVER */
+.menu a:hover,
+.menu .current {
+    background-color: black; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #99ccff;
+    color: white;
+}
+
+.price-box {
+    background-color: #99ccff;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.page-layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* LEFT SIDE */
+.mission-statement {
+    width: 18%;
+    background-color: #99ccff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    align-self: flex-start; 
+}
+
+/* RIGHT SIDE */
+.menu-content {
+    width: 75%;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* ALIGN COLUMNS */
+td:nth-child(2) {
+    text-align: center;
+}
+
+td:nth-child(3) {
+    text-align: right;
+}
+
+h1 {
+    font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+    color: black;
+    font-size: 32px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+    color: black;
+    font-size: 32px; 
+    text-align: center;
+}
+.about-content .bottom-box {
+    max-width: 100%;
+    width: 800px;
+    margin: 20px auto !important;
+    background-color: #99ccff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.bottom-box {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.about-layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+/* LEFT SIDE */
+.mission-box {
+    width: 20%;
+    background-color: #99ccff;
+    padding: 12px;
+    border-radius: 10px;
+    align-self: flex-start; /* keeps it small */
+}
+
+
+/* MIDDLE */
+.about-content {
+    width: 70%;
+}
+
+video {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.video-caption {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+    margin-top: 10px;
+    font-size: 16px;
+}
+footer.bottom-box {
+    width: 800px;          
+    margin: 20px auto;     
+    background-color: #99ccff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+}
+form input, form select, form textarea {
+    
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.checkbox-group input[type="checkbox"] {
+    width: auto;      
+    margin: 0;
+}
+.home-layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.home-layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.welcome {
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+    background-color: #cce6ff;
+    padding: 20px;
+    border-radius: 10px;
+}
